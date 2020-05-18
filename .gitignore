@@ -1,0 +1,108 @@
+.env
+.env-*
+.travis-secrets.tar
+.travis-keys
+
+.serverless
+.sls-simulate-registry
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn-offline-cache/v1/
+
+bower_components/
+node_modules/
+/builds/
+.build/
+/build/
+/.temp/
+# Any temp directory
+.temp/
+/backend/builds/
+/frontend/builds/
+/backend/packages/
+frontend/app/styles/main.css
+frontend/app/styles/main.css.map
+
+# VS Code
+.vscode
+.history
+
+# Sublime Text
+.sublime-workspace
+*.sublime-workspace
+
+# Webstorm
+.idea
+
+# Environment selector is a dev setting
+frontend/app/app.environment.config.js
+/test/errorShots/
+
+# Webstorm
+.idea
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/modules.xml
+.idea/watcherTasks.xml
+.idea/
+.idea/school.xml
+.idea/vcs.xml
+
+/test/.temp
+
+# Likely to change, and should not be commited
+frontend/firebase-debug.log
+
+# OS generated files
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+templates.js
+
+flyway.conf
+flyway-*.conf
+
+FRLVL@K2
+**/FRLVL@K2
+
+.sls-simulate-registry
+# Python
+*.pyc
+
+# Ansible retry files
+ansible/*.retry
+mobile/fastlane/report.xml
+mobile/android/app/acg-upload-key.jks
+mobile/android/app/gradle.properties
+mobile/fastlane/report.xml
+mobile/fastlane/android-developer-api-key.json
+mobile/fastlane/report.xml
+mobile/fastlane/screenshots
+mobile/fastlane/metadata
+/mobile/fastlane/report.xml
+/mobile/acloudguru.app.dSYM.zip
+
+.netlify
+
+.next
+
+coverage
+/frontends/hire/.env.test
+/frontends/hire/.yalc
+/frontends/hire/yalc.lock
+
+// NPM Auth Token
+/.npmrc

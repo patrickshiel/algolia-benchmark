@@ -1,0 +1,11 @@
+// index: private_zacl_all_organisation_users
+0: task 43062131000 took 5.687 seconds
+1: task 43062132000 took 5.610 seconds
+2: task 43062133000 took 3.093 seconds
+3: task 43062134000 took 5.612 seconds
+4: task 43062135000 took 5.615 seconds
+5: task 43062140000 took 5.621 seconds
+6: task 43062143000 took 5.613 seconds
+7: task 43062144000 took 5.629 seconds
+8: task 43062147000 took 5.611 seconds
+9: task 43062150000 took 5.611 seconds

@@ -1,0 +1,11 @@
+// index: private_prod_all_organisation_users
+0: task 41297169001 took 14.231 seconds
+1: task 41297170001 took 9.233 seconds
+2: task 41297175001 took 14.167 seconds
+3: task 41297176001 took 14.183 seconds
+4: task 41297177001 took 9.234 seconds
+5: task 41297180001 took 14.154 seconds
+6: task 41297181001 took 14.181 seconds
+7: task 41297182001 took 14.147 seconds
+8: task 41297187001 took 14.162 seconds
+9: task 41297188001 took 14.159 seconds

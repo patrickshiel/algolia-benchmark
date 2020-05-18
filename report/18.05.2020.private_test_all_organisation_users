@@ -1,0 +1,18 @@
+yarn run v1.22.4
+$ node . --appId 2AQ0ZGWJ3U --apiKey 535a0aaceb923014bd64d7a8c80f7aa0 --indexName=private_test_all_organisation_users
+Algolia Benchmark:
+{
+  appId: '2AQ0ZGWJ3U',
+  indexName: 'private_test_all_organisation_users'
+}
+0: task 43493002 took 3.550 seconds
+1: task 43494002 took 3.881 seconds
+2: task 43495002 took 3.891 seconds
+3: task 43496002 took 3.858 seconds
+4: task 43498002 took 3.883 seconds
+5: task 43503002 took 4.801 seconds
+6: task 43506002 took 4.803 seconds
+7: task 43510002 took 4.816 seconds
+8: task 43514002 took 3.878 seconds
+9: task 43517002 took 4.810 seconds
+Done in 96.17s.
