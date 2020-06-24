@@ -1,25 +1,24 @@
 const algoliasearch = require('algoliasearch');
-const args = require('minimist')(process.argv.slice(2));
+const argv = require('minimist')(process.argv.slice(2));
 const Bluebird = require('bluebird');
-const { isEmpty } = require('lodash');
+const { get } = require('lodash');
 
 console.log(`Algolia Benchmark:`);
+
 let iteration = 0;
+const MANDATORY_ARGS = ['appId', 'apiKey', 'indexName'];
 
-const validateMandatoryArgs = ({ appId, apiKey, indexName }) => {
-    const mandatoryArgs = { appId, apiKey, indexName };
-
-    Object.keys(mandatoryArgs).map((key) => {
-        if (isEmpty(mandatoryArgs[key])) {
-            throw new Error(`Missing required arg "${key}"`);
-        }
-    });
-
-    console.log({appId, indexName});
-    return mandatoryArgs;
+const validateMandatoryArgs = (args) => {
+    return MANDATORY_ARGS.reduce((parsedArgs, argName) => {
+            const argValue = get(args, argName);
+            if (!argValue) { throw new Error(`Missing required arg "${argName}"`); }
+            parsedArgs[argName] = argValue;
+            return parsedArgs;
+        }, {});
 };
 
-const getIndex = ({ appId, apiKey, indexName }) => {
+const getIndex = ({appId, apiKey, indexName}) => {
+    console.log({appId, indexName});
     const algoliaClient = algoliasearch(appId, apiKey);
     return algoliaClient.initIndex(indexName);
 }
@@ -47,7 +46,7 @@ const parseHrtimeToSeconds = hrtime => {
 }
 
 return Bluebird
-    .resolve(validateMandatoryArgs(args))
+    .resolve(validateMandatoryArgs(argv))
     .then(getIndex)
     .then(index => {
         // loop benchmark x 10
