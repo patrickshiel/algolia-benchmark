@@ -1,0 +1,16 @@
+Algolia Benchmark:
+{
+  appId: '2AQ0ZGWJ3U',
+  indexName: 'private_dev_all_organisation_users'
+}
+0: task 627156000 took 7.119 seconds
+1: task 627157000 took 4.817 seconds
+2: task 627164000 took 6.878 seconds
+3: task 627165000 took 5.827 seconds
+4: task 627166000 took 4.792 seconds
+5: task 627169000 took 6.868 seconds
+6: task 627170000 took 6.889 seconds
+7: task 627172000 took 6.228 seconds
+8: task 627177000 took 4.810 seconds
+9: task 627181000 took 6.874 seconds
+Done in 117.19s.
