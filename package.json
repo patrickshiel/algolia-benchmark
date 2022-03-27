@@ -13,6 +13,6 @@
     "algoliasearch": "^4.2.0",
     "bluebird": "^3.7.2",
     "lodash": "^4.17.15",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
